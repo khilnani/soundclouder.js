@@ -8,9 +8,16 @@ SoundCloud APIs Implemented
 ===============
 - /oauth2/token
 
+Usage
+==============
+
+var sc = require("soundclouder");
+sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
+
+
 
 Installation
-==========
+============
 
 Global
 --------- 
