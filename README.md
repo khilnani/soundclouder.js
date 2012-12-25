@@ -16,7 +16,7 @@ var sc = require("soundclouder");
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
 sc.auth(sc_code, function (e) {
 	if(e) 
-  	{
+  	 {
   		log.error(e.message);
 	} else {
 		log.info('access_token=' + sc.accesstoken());
