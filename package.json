@@ -1,0 +1,25 @@
+{
+  "name": "soundclouder",
+  "description": "SoundCloud API for Node.js",
+  "version": "0.0.1",
+  "author": "dysf <info@dysf.co>",
+  "maintainers": [
+    "dysf <info@dysf.co>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dysf/soundclouder.js.git"
+  },
+  "keywords": [
+    "SoundCloud",
+    "API",
+    "node.js"
+  ],
+  "dependencies": {
+	"dysf.utils": "0.x.x"
+  },
+  "main": "./lib/soundclouder",
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
