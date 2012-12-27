@@ -16,6 +16,7 @@
     "node.js"
   ],
   "dependencies": {
+	"vows": "0.7.0",
 	"dysf.utils": "0.0.7"
   },
   "main": "./lib/soundclouder",
