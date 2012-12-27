@@ -1,4 +1,4 @@
-soundclouder.js
+soundclouder.js [![Build Status](https://secure.travis-ci.org/dysf/soundclouder.js.png)](http://travis-ci.org/dysf/soundclouder.js)
 ===============
 
 SoundCloud API for Node.js. What else is there to say?
@@ -14,12 +14,15 @@ Usage
 <pre>
 var sc = require("soundclouder");
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
-sc.auth(sc_code, function (e) {
+sc.auth(sc_code, function (e, accesstoken) 
+{
 	if(e) 
-  	 {
-  		log.error(e.message);
-	} else {
-		log.info('access_token=' + sc.accesstoken());
+	{
+		console.error(e.message);
+	} 
+	else 
+	{
+		console.log('access_token=' + accesstoken );
 	}
 });
 </pre>

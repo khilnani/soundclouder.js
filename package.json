@@ -1,7 +1,7 @@
 {
   "name": "soundclouder",
   "description": "SoundCloud API for Node.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "dysf <info@dysf.co>",
   "maintainers": [
     "dysf <info@dysf.co>"
@@ -21,5 +21,8 @@
   "main": "./lib/soundclouder",
   "engines": {
     "node": ">= 0.8.0"
+  },
+  "scripts": {
+        "test": "vows --spec"
   }
 }
