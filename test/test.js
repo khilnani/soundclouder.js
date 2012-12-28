@@ -1,7 +1,7 @@
 var sc = require("../lib/soundclouder"),
-		request = require("request"),
+	request = require("request"),
         log = require("dysf.utils").logger
-        config = require("./config.dysf")
+        config = require("./config")
         vows = require("vows");
 
 
