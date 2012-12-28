@@ -6,7 +6,9 @@ SoundCloud API for Node.js. What else is there to say?
 
 SoundCloud APIs Implemented
 ===============
-- /oauth2/token
+- Connection/Authorization Url
+- OAuth Authorization (/oauth2/token)
+- General GET and POSTS. PUT and DELETE in draft.
 
 Usage
 ==============
