@@ -1,4 +1,4 @@
-soundclouder.js [![Build Status](https://travis-ci.org/dysf/soundclouder.js.png)](https://travis-ci.org/dysf/soundclouder.js)
+soundclouder.js [![Build Status](https://api.travis-ci.org/dysf/soundclouder.js.png?branch=master)](https://travis-ci.org/dysf/soundclouder.js)
 ===============
 
 SoundCloud API for Node.js. What else is there to say?
