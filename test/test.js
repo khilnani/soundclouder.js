@@ -4,7 +4,6 @@ var sc = require("../lib/soundclouder"),
         config = require("./config")
         vows = require("vows");
 
-
 log.setLogLevel(5);
 
 var sccode = config.sc_code;
