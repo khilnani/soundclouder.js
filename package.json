@@ -18,7 +18,7 @@
   "dependencies": {
 	"vows": "0.7.0",
 	"request": "2.x.x",
-	"dysf.utils": "0.0.8"
+	"dysf.utils": "0.0.9"
   },
   "main": "./lib/soundclouder",
   "engines": {
