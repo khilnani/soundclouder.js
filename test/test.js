@@ -15,8 +15,8 @@ vows.describe('soundclouder.js').addBatch({
     "initialization": {
       "should not error": function () {
 		sc.init(config.sc_client_id, config.sc_client_secret, config.sc_redirect_uri);
-		var config = sc.getConfig();
-		log.info(config);
+		var c = sc.getConfig();
+		log.info(c);
       }
     }
   }
