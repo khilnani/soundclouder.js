@@ -1,10 +1,10 @@
 {
   "name": "soundclouder",
   "description": "SoundCloud API for Node.js",
-  "version": "0.0.4",
-  "author": "dysf <info@dysf.co>",
+  "version": "0.0.5",
+  "author": "Nik Khilnani <nik@khilnani.org>",
   "maintainers": [
-    "dysf <info@dysf.co>"
+    "Nik Khilnani <nik@khilnani.org>"
   ],
   "repository": {
     "type": "git",
