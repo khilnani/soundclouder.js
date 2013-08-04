@@ -17,21 +17,21 @@ Usage
 var sc = require("soundclouder");
 // client id, secret and redirect url are the values obtained from http://soundcloud/you/apps
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
-// sc_code is the code obtained after authenitcating the application using the Browser based SoundCloud App Login
-sc.auth(sc_code, function (e, oauth_token) 
+// code sent by the browser based SoundCloud Login that redirects to the redirect_uri
+sc.auth( code, function (error, access_token) 
 {
-	if(e) 
+	if(error) 
 	{
 		console.error(e.message);
 	} 
 	else 
 	{
-		console.log('oauth_token=' + oauth_token );
+		console.log('access_token=' + access_token );
 	}
 });
 </pre>
 <pre>
-sc.get('/tracks/' + track_id, oauth_token, function (data) {
+sc.get('/tracks/' + track_id, access_token, function (data) {
 
 console.log( data.title );
 
@@ -39,7 +39,7 @@ console.log( data.title );
 </pre>
 
 <pre>
-sc.put('/tracks/' + track_id, oauth_token, { description: "new description" }, function (data) {
+sc.put('/tracks/' + track_id, access_token, { description: "new description" }, function (data) {
 
 console.log( data.title );
 
