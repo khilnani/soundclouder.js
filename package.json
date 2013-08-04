@@ -1,7 +1,7 @@
 {
   "name": "soundclouder",
   "description": "SoundCloud API for Node.js",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Nik Khilnani <nik@khilnani.org>",
   "maintainers": [
     "Nik Khilnani <nik@khilnani.org>"
