@@ -15,8 +15,10 @@ Usage
 
 <pre>
 var sc = require("soundclouder");
+// client id, secret and redirect url are the values obtained from http://soundcloud/you/apps
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
-sc.auth(sc_code, function (e, accesstoken) 
+// sc_code is the code obtained after authenitcating the application using the Browser based SoundCloud App Login
+sc.auth(sc_code, function (e, oauth_token) 
 {
 	if(e) 
 	{
@@ -24,11 +26,26 @@ sc.auth(sc_code, function (e, accesstoken)
 	} 
 	else 
 	{
-		console.log('access_token=' + accesstoken );
+		console.log('oauth_token=' + oauth_token );
 	}
 });
 </pre>
- 
+<pre>
+sc.get('/tracks/' + track_id, oauth_token, function (data) {
+
+console.log( data.title );
+
+});
+</pre>
+
+<pre>
+sc.put('/tracks/' + track_id, oauth_token, { description: "new description" }, function (data) {
+
+console.log( data.title );
+
+});
+</pre>
+
 Installation
 ============
 
