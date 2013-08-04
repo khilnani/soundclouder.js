@@ -57,4 +57,19 @@ vows.describe('soundclouder.js').addBatch({
 		}
     }
   }
+}).addBatch({
+  "When using soundclouder ": {
+    "a get /track API call": {
+      "should not error": { 
+			topic: function () {
+				sc.get('/tracks/103094732', oauth_token, this.callback);
+			},
+			'returns': function(error, data) {
+				log.event("sc.get() /tracks/103094732");
+				if(error) log.error(error.message);
+				else log.info(data);
+			}
+		}
+    }
+  }
 }).export(module);
