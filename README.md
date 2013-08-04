@@ -8,7 +8,7 @@ SoundCloud APIs Implemented
 ===============
 - Connection/Authorization Url
 - OAuth Authorization (/oauth2/token)
-- General GET and POSTS. PUT and DELETE in draft.
+- General GET, PUT, POST and DELETE.
 
 Usage
 ==============
@@ -45,6 +45,13 @@ console.log( data.title );
 
 });
 </pre>
+
+
+Links
+============
+- Application Setup - http://developers.soundcloud.com/docs/api/guide#authentication
+- Error Codes - http://developers.soundcloud.com/docs/api/guide#errors
+
 
 Installation
 ============
