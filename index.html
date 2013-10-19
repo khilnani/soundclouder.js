@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Soundclouder.js by khilnani</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Soundclouder.js</h1>
+        <p>SoundCloud API for Node.js </p>
+
+        <p class="view"><a href="https://github.com/khilnani/soundclouder.js">View the Project on GitHub <small>khilnani/soundclouder.js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/khilnani/soundclouder.js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/khilnani/soundclouder.js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/khilnani/soundclouder.js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="soundclouderjs-" class="anchor" href="#soundclouderjs-"><span class="octicon octicon-link"></span></a>soundclouder.js <a href="https://travis-ci.org/khilnani/soundclouder.js"><img src="https://api.travis-ci.org/khilnani/soundclouder.js.png?branch=master" alt="Build Status"></a>
+</h1>
+
+<p>SoundCloud API for Node.js. What else is there to say?</p>
+
+<h1>
+<a name="soundcloud-apis-implemented" class="anchor" href="#soundcloud-apis-implemented"><span class="octicon octicon-link"></span></a>SoundCloud APIs Implemented</h1>
+
+<ul>
+<li>Connection/Authorization Url</li>
+<li>OAuth Authorization (/oauth2/token)</li>
+<li>General GET, PUT, POST and DELETE.</li>
+</ul><h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<pre>
+var sc = require("soundclouder");
+
+// client id, secret and redirect url are the values obtained from http://soundcloud/you/apps
+sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
+
+// code sent by the browser based SoundCloud Login that redirects to the redirect_uri
+sc.auth( code, function (error, access_token) 
+{
+    if(error) 
+    {
+        console.error(e.message);
+    } 
+    else 
+    {
+        console.log('access_token=' + access_token );
+    }
+});
+</pre>
+
+<pre>
+sc.get('/tracks/' + track_id, access_token, function (data) {
+
+    console.log( data.title );
+
+});
+</pre>
+
+<h1>
+<a name="links" class="anchor" href="#links"><span class="octicon octicon-link"></span></a>Links</h1>
+
+<ul>
+<li>Application Setup - <a href="http://developers.soundcloud.com/docs/api/guide#authentication">http://developers.soundcloud.com/docs/api/guide#authentication</a>
+</li>
+<li>Error Codes - <a href="http://developers.soundcloud.com/docs/api/guide#errors">http://developers.soundcloud.com/docs/api/guide#errors</a>
+</li>
+</ul><h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<h2>
+<a name="global" class="anchor" href="#global"><span class="octicon octicon-link"></span></a>Global</h2>
+
+<ul>
+<li>Run: <code>sudo npm install soundclouder -g</code>
+</li>
+<li>Usually installed at - /usr/local/lib/node_modules/soundclouder</li>
+</ul><h2>
+<a name="project" class="anchor" href="#project"><span class="octicon octicon-link"></span></a>Project</h2>
+
+<ul>
+<li>Add <code>"soundclouder": "x.x.x"</code> to the dependencies section of your project's package.json 
+
+<ul>
+<li>Example <code>"dependencies": { "soundclouder": "x.x.x" }</code>
+</li>
+</ul>
+</li>
+<li>Run <code>npm install</code> in the director with your package.json</li>
+<li>Usually installed at - PROJECT_DIR/node_modules/soundclouder</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/khilnani">khilnani</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
