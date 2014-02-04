@@ -1,7 +1,7 @@
 {
   "name": "soundclouder",
   "description": "SoundCloud API for Node.js",
-  "version": "0.7.0",
+  "version": "0.7.10",
   "author": "Nik Khilnani <nik@khilnani.org>",
   "maintainers": [
     "Nik Khilnani <nik@khilnani.org>"
@@ -18,7 +18,7 @@
   "dependencies": {
 	"vows": "0.7.0",
 	"request": "2.x.x",
-	"dysf.utils": "0.0.9"
+	"dysf.utils": "0.1.0"
   },
   "main": "./lib/soundclouder",
   "engines": {
