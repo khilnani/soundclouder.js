@@ -26,7 +26,7 @@ Usage
 <pre>
 var sc = require("soundclouder");
 
-// client id, secret and redirect url are the values obtained from http://soundcloud/you/apps
+// client id, secret and redirect url are the values obtained from <a href="http://soundcloud.com/you/apps">http://soundcloud.com/you/apps</a>
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
 
 // code sent by the browser based SoundCloud Login that redirects to the redirect_uri
