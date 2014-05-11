@@ -43,7 +43,7 @@ sc.auth( code, function (error, access_token)
 });
 </pre>
 <pre>
-sc.get('/tracks/' + track_id, access_token, function (data) {
+sc.get('/tracks/' + track_id, access_token, function (error, data) {
 
 	console.log( data.title );
 
