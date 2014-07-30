@@ -87,4 +87,19 @@ vows.describe('soundclouder.js').addBatch({
 	  }
     }
   }
+}).addBatch({
+	"When using soundclouder ": {
+		"requests with query parameters": {
+			"should not error": {
+				topic: function () {
+					sc.get('/tracks?q=rac', '', this.callback);
+				},
+				'returns': function(error, data) {
+					log.event('sc.get() /tracks?q=?rac');
+					if (data !== undefined) log.info('data returned');
+					else log.error(error);
+				}
+			}
+		}
+	}
 }).export(module);
