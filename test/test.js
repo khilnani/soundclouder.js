@@ -72,4 +72,19 @@ vows.describe('soundclouder.js').addBatch({
 		}
     }
   }
+}).addBatch({
+  "When using soundclouder ": {
+    "requests should use client_id": {
+      "when no oath_token is provided": {
+		topic: function() {
+		  sc.get('/tracks/106176078', '', this.callback);
+		},
+		'returns': function(error, data) {
+		  log.event('sc.get() /tracks/103094732');
+		  if (data !== undefined) log.info('data returned');
+		  else log.error(error);
+		}
+	  }
+    }
+  }
 }).export(module);
