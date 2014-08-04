@@ -1,4 +1,6 @@
-### Prior to running tests
+### Test Setup
+
+> These steps should be completed prior to running tests
 
 Since the SoundCloud API requires a user to authorize an application via user interaction (logging in) to get a code, please follow the steps below to get an oauth token
 
