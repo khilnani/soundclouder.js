@@ -6,7 +6,6 @@ var sc = require("../lib/soundclouder"),
 
 log.setLogLevel(5);
 
-var sccode = config.sc_code;
 var oauth_token = config.oauth_token;
 
 
@@ -17,28 +16,6 @@ vows.describe('soundclouder.js').addBatch({
 		sc.init(config.sc_client_id, config.sc_client_secret, config.sc_redirect_uri);
 		var c = sc.getConfig();
 		log.info(c);
-      }
-    }
-  }
-}).addBatch({
-  "When using soundclouder ": {
-    "authorization": {
-      "should not error": {
-      	topic: function () {
-			sc.auth(sccode, this.callback);
-		},
-		'returns': function (e, token) {
-			log.event("sc.auth()");
-			if(e != null)
-			{
-				log.error('sc.auth(): ERROR');
-				log.error(e);
-			}
-			else
-			{
-				log.event('sc.auth(): access_token=' + token );
-			}
-		}
       }
     }
   }
