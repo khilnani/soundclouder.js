@@ -11,7 +11,7 @@
 soundclouder.js [![Build Status](https://api.travis-ci.org/khilnani/soundclouder.js.png?branch=master)](https://travis-ci.org/khilnani/soundclouder.js)
 ===============
 
-SoundCloud API for Node.js. What else is there to say?
+> SoundCloud API for Node.js. 
 
 NPM Module Info - https://www.npmjs.org/package/soundclouder
 
