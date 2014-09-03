@@ -26,7 +26,16 @@ Usage
 ==============
 
 <pre>
+// Include the soundclouder library
 var sc = require("soundclouder");
+
+// Update the logging level
+// See: https://github.com/khilnani/dysf.utils
+// Also see: test/test.js
+var log = require("dysf.utils").logger
+// 0: system, 1: error, 2: warn, 3: event, 4: info, 5: debug, 6: trace. Default is 4 (info)
+// Set to debug
+log.setLogLevel(5);
 
 // client id, secret and redirect url are the values obtained from <a href="http://soundcloud.com/you/apps">http://soundcloud.com/you/apps</a>
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
