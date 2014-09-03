@@ -25,7 +25,7 @@ SoundCloud APIs Implemented
 Usage
 ==============
 
-<pre>
+```
 // Include the soundclouder library
 var sc = require("soundclouder");
 
@@ -52,14 +52,15 @@ sc.auth( code, function (error, access_token)
 		console.log('access_token=' + access_token );
 	}
 });
-</pre>
-<pre>
+```
+
+```
 sc.get('/tracks/' + track_id, access_token, function (error, data) {
 
 	console.log( data.title );
 
 });
-</pre>
+```
 
 
 Links
