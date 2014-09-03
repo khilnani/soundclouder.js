@@ -46,7 +46,7 @@ sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
 // that redirects to the redirect_uri
 sc.auth( code, function (error, access_token) 
 {
-	if(error) 
+	if(error)
 	{
 		console.error(e.message);
 	} 
