@@ -25,7 +25,7 @@ SoundCloud APIs Implemented
 Usage
 ==============
 
-```
+```javascript
 // Include the soundclouder library
 var sc = require("soundclouder");
 
