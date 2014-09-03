@@ -4,7 +4,8 @@ var sc = require("../lib/soundclouder"),
         config = require("./config")
         vows = require("vows");
 
-log.setLogLevel(5);
+// set log level to debug (trace is 5)
+log.setLogLevel(5); 
 
 var oauth_token = config.oauth_token;
 
