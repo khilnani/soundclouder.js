@@ -38,7 +38,8 @@ var log = require("dysf.utils").logger
 // Set to debug
 log.setLogLevel(5);
 
-// client id, secret and redirect url are the values obtained from <a href="http://soundcloud.com/you/apps">http://soundcloud.com/you/apps</a>
+// client id, secret and redirect url are the values obtained from 
+// <a href="http://soundcloud.com/you/apps">http://soundcloud.com/you/apps</a>
 sc.init(sc_client_id, sc_client_secret, sc_redirect_uri);
 
 // code sent by the browser based SoundCloud Login
