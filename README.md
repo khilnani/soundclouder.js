@@ -82,15 +82,15 @@ function scRedirectHandler (request, response) {
   // get the 'code' paramater from the request
   var code = request.query.code;
   // authorize and get an access token
-  sc.auth(code, function (error, accesstoken) {
+  sc.auth(code, function (error, access_token) {
     if (error) {
-      console.error(e.message);
+      console.error(error.message);
     } else {
       // Store the access_token somewhere, perhaps the user's session
       console.log('access_token=' + access_token );
       // call subsequent calls to SoundCloud
       // send the method the saved access_token for the user
-      sc.get('/tracks/11222211', access_token, function (error, data) {
+      sc.get('/tracks/11222211', access_token, function (error2, data) {
         console.log( data.title );
       });
     }
